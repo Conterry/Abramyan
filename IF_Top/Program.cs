@@ -222,5 +222,51 @@ namespace IF_Top
                 Console.WriteLine(c);
             }
         }
+
+        static void If14()
+        {
+            int a = 3, b = 5, c = 9;
+            if(a<b && a < c)
+            {
+                Console.WriteLine(a);
+            }
+            if(b<c && b < a)
+            {
+                Console.WriteLine(b);
+            }
+            if(c<a && c < b)
+            {
+                Console.WriteLine(c);
+            }
+            if(a>b && a > c)
+            {
+                Console.WriteLine(a);
+            }
+            if(b>a && b > c)
+            {
+                Console.WriteLine(b);
+            }
+            if(c>a && c > b)
+            {
+                Console.WriteLine(c);
+            }
+        }
+
+        static void If15()
+        {
+            int a = 5, b = 1, c = 8;
+            if(a>c && b > c)
+            {
+                Console.WriteLine(a + b);
+            }
+            if(a>b && c > b)
+            {
+                Console.WriteLine(a + c);
+            }
+            if(b>a && c > a)
+            {
+                Console.WriteLine(b + c);
+            }
+        }
     }
 }
