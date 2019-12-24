@@ -219,7 +219,7 @@ namespace IF_Top
             }
             if ((a < c && c < b) || (b < c && c < a))
             {
-                C
+                Console.WriteLine(c);
             }
         }
     }
