@@ -268,5 +268,145 @@ namespace IF_Top
                 Console.WriteLine(b + c);
             }
         }
+
+        static void If16()
+        {
+            int a = 4, b = 8, c = 2;
+            if(a<b && b < c)
+            {
+                a = 2 * a;
+                b *= 2;
+                c *= 2;
+            }
+            else
+            {
+                a *= -1;
+                b *= -1;
+                c *= -1;
+            }
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(c);
+        }
+
+        static void If17()
+        {
+            int a = 4, b = 8, c = 2;
+            if ((a < b && b < c) || (a>b && b>c))
+            {
+                a = 2 * a;
+                b *= 2;
+                c *= 2;
+            }
+            else
+            {
+                a *= -1;
+                b *= -1;
+                c *= -1;
+            }
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(c);
+        }
+
+        static void If18()
+        {
+            int a = 3, b = 9, c = 9;
+            if (a != b && a != c)
+            {
+                Console.WriteLine(1);
+            }
+            if(b != a && b!= c)
+            {
+                Console.WriteLine(2);
+            }
+            if(c!=a && c != b)
+            {
+                Console.WriteLine(3);
+            }
+        }
+
+        static void If19()
+        {
+            int a = 3, b = 9, c = 9, d = 9;
+            if (a != b && a != c && a != d)
+            {
+                Console.WriteLine(1);
+            }
+            if (b != a && b != c && b != d)
+            {
+                Console.WriteLine(2);
+            }
+            if (c != a && c != b && c != d)
+            {
+                Console.WriteLine(3);
+            }
+            if (d != a && d != b && d != c)
+            {
+                Console.WriteLine(4);
+            }
+        }
+
+        static void If20()
+        {
+            int a = 4, b = 6, c = 1;
+            if(Math.Abs(a-b) < Math.Abs(a - c))
+            {
+                Console.WriteLine("b");
+                Console.WriteLine(Math.Abs(a - b));
+            }
+            else
+            {
+                Console.WriteLine("c");
+                Console.WriteLine(Math.Abs(a - c));
+            }
+        }
+
+        static void If21()
+        {
+            int x = 0, y = 2;
+            if(x==0 && y == 0)
+            {
+                Console.WriteLine(0);
+            }
+            else if(x==0 && y != 0)
+            {
+                Console.WriteLine(1);
+            }
+            else if(y==0 && x != 0)
+            {
+                Console.WriteLine(2);
+            }
+            else
+            {
+                Console.WriteLine(3);
+            }
+        }
+
+        static void If22()
+        {
+            int x = 4, y = -3;
+            if(x>0 && y > 0)
+            {
+                Console.WriteLine(1);
+            }
+            else if(x<0 && y > 0)
+            {
+                Console.WriteLine(2);
+            }
+            else if(x<0 && y < 0)
+            {
+                Console.WriteLine(3);
+            }
+            else
+            {
+                Console.WriteLine(4);
+            }
+        }
+
+        static void If23()
+        {
+            int x1 = 1, y1 = 5, x2 = 5, y2 = 5, x3 = 5, y3 = -1, x4, y4;
+        }
     }
 }
