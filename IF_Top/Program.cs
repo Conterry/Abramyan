@@ -407,6 +407,128 @@ namespace IF_Top
         static void If23()
         {
             int x1 = 1, y1 = 5, x2 = 5, y2 = 5, x3 = 5, y3 = -1, x4, y4;
+
+        }
+
+        static void If24()
+        {
+            int x = 90;
+            double y;
+            y =(x > 0 ? 2 * Math.Sin(x): 6-x) ;
+            Console.WriteLine(y);
+        }
+
+        static void If25()
+        {
+            int x = 5;
+            double y;
+            y = (x < -2 || x > 2 ? x * 2 : x * -3);
+            Console.WriteLine(y);
+        }
+
+        static void If26()
+        {
+            int x = 4;
+            double y;
+            if (x <= 0)
+            {
+                y = x * -1;
+            }
+            else if(x>0 && x < 2)
+            {
+                y = x * x;
+            }
+            else
+            {
+                y = 4;
+            }
+            Console.WriteLine(y);
+        }
+
+        static void If27()
+        {
+            double x = 5;
+            double y;
+            if (x < 0)
+            {
+                y = 0;
+            }
+            else if(x%2!=1)
+            {
+                y = 1;
+            }
+            else
+            {
+                y = -1;
+            }
+            Console.WriteLine(y);
+        }
+
+        static void If28()
+        {
+            int x = 400;
+            if(x%4==0 && x%100!=0 && x % 400 == 0)
+            {
+                Console.WriteLine("YES");
+            }
+            else
+            {
+                Console.WriteLine("NO");
+            }
+        }
+
+        static void If29()
+        {
+            int a = 4;
+            if(a<0 && a % 2 == 0)
+            {
+                Console.WriteLine("Отрицательное четное число");
+            }
+            if(a<0 && a%2 != 0)
+            {
+                Console.WriteLine("Отрицательное нечетное число");
+            }
+            if (a == 0)
+            {
+                Console.WriteLine("Нулевое число");
+            }
+            if (a > 0 && a % 2 == 0)
+            {
+                Console.WriteLine("Положительное четное число");
+            }
+            if (a > 0 && a % 2 != 0)
+            {
+                Console.WriteLine("Положительное нечетное число");
+            }
+        }
+
+        static void If30()
+        {
+            int a = 54;
+            if(a>=10 && a < 100 && a%2==0)
+            {
+                Console.WriteLine("Четное двухзначное число");
+            }
+            if (a >= 10 && a < 100 && a % 2 != 0)
+            {
+                Console.WriteLine("Нечетное двухзначное число");
+            }
+            if (a >= 1 && a < 10 && a % 2 == 0)
+            {
+                Console.WriteLine("Четное однозначное число");
+            }
+            if (a >= 1 && a < 10 && a % 2 != 0)
+            {
+                Console.WriteLine("Нечетное однозначное число");
+            }
+            if (a >= 100 && a < 1000 && a % 2 == 0)
+            {
+                Console.WriteLine("Четное трехзначное число");
+            }
+            if (a >= 100 && a < 1000 && a % 2 != 0)
+            {
+                Console.WriteLine("Нечетное трехзначное число");
+            }
         }
     }
 }
