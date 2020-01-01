@@ -166,5 +166,34 @@ namespace For_Top
             }
             Console.WriteLine(f);
         }
+
+        static void For16()
+        {
+            int a = 2, n = 5;
+            for(int i=1; i<=n; i++)
+            {
+                Console.WriteLine(Math.Pow(a, i));
+            }
+        }
+
+        static void For17()
+        {
+            double a = 2, n = 6, s = 0;
+            for(int i=0; i<=n; i++)
+            {
+                s += Math.Pow(a, i);
+            }
+            Console.WriteLine(s);
+        }
+
+        static void For18()
+        {
+            double a = 2, n = 5, s = 0;
+            for(int i=0; i<=n; i++)
+            {
+                s += Math.Pow(a * -1, i);
+            }
+            Console.WriteLine(s);
+        }
     }
 }
