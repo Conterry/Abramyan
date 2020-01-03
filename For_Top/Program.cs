@@ -195,5 +195,50 @@ namespace For_Top
             }
             Console.WriteLine(s);
         }
+
+        static void For19()
+        {
+            double d = 5, s = 1;
+            for(int i=1; i<=d; i++)
+            {
+                s *= i;
+            }
+            Console.WriteLine(s);
+            
+        }
+
+        static void For20()
+        {
+            double n = 5, s = 0, d = 1;
+            for(int i=1; i<=n; i++)
+            {
+                d *= i;
+                s += d;
+            }
+            Console.WriteLine(s);
+        }
+
+        static void For21()
+        {
+            double n = 5, s = 0, d = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                d *= i;
+                s += 1/d;
+            }
+            Console.WriteLine(s);
+        }
+
+        static void For22()
+        {
+            double n = 5, s = 0, d = 1, f=1, x=5;
+            for (int i = 1; i <= n; i++)
+            {
+                f *= x;
+                d *= i;
+                s += f/d;
+            }
+            Console.WriteLine(s);
+        }
     }
 }
