@@ -6,7 +6,7 @@ namespace For_Top
     {
         static void Main(string[] args)
         {
-            For5();
+            For23();
         }
 
         static void For1()
@@ -239,6 +239,62 @@ namespace For_Top
                 s += f/d;
             }
             Console.WriteLine(s);
+        }
+
+        //static void For23()
+        //{
+        //    int x = 5, n = 5, s = 0, d = 1, m = 1; ;
+        //    for(int i=0; i<n; i++)
+        //    {
+        //        d *= i;
+        //        m *= -1;
+        //        s += m * d;
+        //    }
+        //    Console.WriteLine(s);
+        //}
+
+        static void For24()
+        {
+            double n = 5, x = 5, sum = 0, stx = 0, fac = 1, sto = 1;
+            for (int i=1; i<=n; i+=2, fac*=i, fac*=i-1, sto*=-1, stx*=x, stx*=x)
+            {
+                sum+=sto*stx/ fac;
+            }
+            Console.WriteLine(sum);
+        }
+
+        static void For25()
+        {
+            double x = 5, n = 5, sum = 0, stx = x, sto = 1;
+            for(int i=1; i<=n; i++, stx*=x, sto*=-1)
+            {
+                sum += sto * stx / i;
+            }
+            Console.WriteLine(sum);
+        }
+
+        static void For26()
+        {
+            double n = 5, x = 5, stx = x, f = 1, sto = 1, sum = 0;
+            for(int i=1; i<n; i++, f+=2, stx*=x, stx *= x, sto*=-1)
+            {
+                sum += sto * stx / f;
+            }
+            Console.WriteLine(sum);
+        }
+
+        static void For27()
+        {
+            double a = 2, b = 6, n = 2, h, f, sum = 0;
+            h = b - a / n;
+            Console.WriteLine(b - a / n);
+            int i = 1;
+            while (sum < b)
+            {
+                sum = a + i * h;
+                Console.WriteLine(sum);
+                i++;
+            }
         }
     }
 }
