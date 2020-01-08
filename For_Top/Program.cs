@@ -6,7 +6,7 @@ namespace For_Top
     {
         static void Main(string[] args)
         {
-            For23();
+            For33();
         }
 
         static void For1()
@@ -283,7 +283,7 @@ namespace For_Top
             Console.WriteLine(sum);
         }
 
-        static void For27()
+        static void For29()
         {
             double a = 2, b = 6, n = 2, h, f, sum = 0;
             h = b - a / n;
@@ -294,6 +294,91 @@ namespace For_Top
                 sum = a + i * h;
                 Console.WriteLine(sum);
                 i++;
+            }
+        }
+
+        static void For30()
+        {
+            double a = 2, b = 6, n = 3, h, f, sum = 0;
+            h = b - a / n;
+            Console.WriteLine(h);
+            int i = 1;
+            while (sum < b)
+            {
+                sum = a + i * h;
+                Console.WriteLine(1 - Math.Sin(sum));
+                i++;
+            }   
+        }
+
+        static void For31()
+        {
+            double n = 5, a = 2;
+            Console.WriteLine(a);
+            for(int i=0; i<n; i++)
+            {
+                a = 2 + 1 / a;
+                Console.WriteLine(a);
+            }
+        }
+
+        static void For32()
+        {
+            double n = 5, a = 1;
+            Console.WriteLine(a);
+            for (int i = 1; i <= n; i++)
+            {
+                a = (a+1)/i;
+                Console.WriteLine(a);
+            }
+        }
+
+        static void For33()
+        {
+            int n = 6;
+            int f1 = 1;
+            int f2 = 1;
+            Console.WriteLine(f1);
+            Console.WriteLine(f2);
+            for (int i = 3; i < n; i++)
+            {
+                int r = f1;
+                f1 = f2;
+                f2 = r+f2;
+                Console.WriteLine(f2);
+            }
+        }
+
+        static void For34()
+        {
+            int n = 6;
+            int f1 = 1;
+            int f2 = 2;
+            for (int i = 3; i < n; i++)
+            {
+                int r = f1;
+                f1 = f2;
+                f2 = (r + 2*f2)/3;
+                Console.WriteLine(f2);
+            }
+        }
+
+        static void For35()
+        {
+            int n = 6;
+            int f1 = 1;
+            int f2 = 2;
+            int f3 = 3;
+            Console.WriteLine(f1);
+            Console.WriteLine(f2);
+            Console.WriteLine(f3);
+            for (int i = 3; i < n; i++)
+            {
+                int f4 = f3 + f2 - 2 * f1;
+                Console.WriteLine(f4);
+                f1 = f2;
+                f2 = f3;
+                f3 = f4;
             }
         }
     }
