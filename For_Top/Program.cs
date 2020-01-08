@@ -6,7 +6,7 @@ namespace For_Top
     {
         static void Main(string[] args)
         {
-            For33();
+            For36();
         }
 
         static void For1()
@@ -380,6 +380,21 @@ namespace For_Top
                 f2 = f3;
                 f3 = f4;
             }
+        }
+
+        static void For36()
+        {
+            double n = 5, k = 5, f, s;
+            for(int i=1; i<=n; i++)
+            {
+                f = i;
+                for(int j=1; j<=k; j++)
+                {
+                    f *= i;
+                }
+                s += f;
+            }
+            Console.WriteLine(s);
         }
     }
 }
