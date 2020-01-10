@@ -384,7 +384,7 @@ namespace For_Top
 
         static void For36()
         {
-            double n = 5, k = 5, f, s;
+            double n = 5, k = 5, f, s=0;
             for(int i=1; i<=n; i++)
             {
                 f = i;
