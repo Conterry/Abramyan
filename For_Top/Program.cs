@@ -396,5 +396,30 @@ namespace For_Top
             }
             Console.WriteLine(s);
         }
+
+        static void For37()
+        {
+            double n = 5, s = 0;
+            for(double i=1; i<=n; i++)
+            {
+                s += Math.Pow(i, i) ;
+            }
+            Console.WriteLine(s);
+        }
+
+        static void For38()
+        {
+            double n = 5, s = 0;
+            for(int i=0, j=1; i<n; i++, j++)
+            {
+                s += Math.Pow(j, n - i);
+            }
+            Console.WriteLine(s);
+        }
+
+        static void For39()
+        {
+
+        }
     }
 }
