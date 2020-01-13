@@ -11,19 +11,21 @@ namespace SqrtSearch_Class
 
         static void Bin()
         {
-            double k = 9, x = k / 2;
-            while (x*x != k)
+            double k = 9, a = 0, b = k, avg=0;
+            while((b - k) * (b - k) != k)
             {
-                if (x * x < k)
+                avg = (a + b) / 2;
+                if (avg * avg < k)
                 {
-                    x = x * 3 / 2;
+                    a = avg;
                 }
                 else
                 {
-                    x /= 2;
+                    b = avg;
                 }
             }
-            Console.WriteLine(x);
+            Console.WriteLine(avg);
+
         }
     }
 }
