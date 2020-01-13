@@ -6,7 +6,7 @@ namespace For_Top
     {
         static void Main(string[] args)
         {
-            For36();
+            For39();
         }
 
         static void For1()
@@ -419,7 +419,26 @@ namespace For_Top
 
         static void For39()
         {
+            int a = 3, b = 6;
+            for(int i=a; i < b; i++)
+            {
+                for(int j=0; j<i; j++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
 
+        static void For40()
+        {
+            int a = 4, b = 6, k=1;
+            for (int i = a; i < b; i++, k++)
+            {
+                for (int j = 0; j < k; j++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
         }
     }
 }
