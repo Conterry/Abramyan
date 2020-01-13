@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Boolean_Top", "Boolean_Top\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IF_Top", "IF_Top\IF_Top.csproj", "{1EF36742-329E-4BF2-B8F9-ED8AE3F0937B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Case_Top", "Case_Top\Case_Top.csproj", "{9A0373AD-3188-43F1-B56F-181B23D02000}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Case_Top", "Case_Top\Case_Top.csproj", "{9A0373AD-3188-43F1-B56F-181B23D02000}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "For_Top", "For_Top\For_Top.csproj", "{93B6A437-B248-409F-BE7B-4367045C7593}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "For_Top", "For_Top\For_Top.csproj", "{93B6A437-B248-409F-BE7B-4367045C7593}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqrtSearch_Class", "Sqrt_Class\SqrtSearch_Class.csproj", "{59913846-6EA8-41F1-AB9D-579850CFADE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{93B6A437-B248-409F-BE7B-4367045C7593}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93B6A437-B248-409F-BE7B-4367045C7593}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93B6A437-B248-409F-BE7B-4367045C7593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59913846-6EA8-41F1-AB9D-579850CFADE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59913846-6EA8-41F1-AB9D-579850CFADE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59913846-6EA8-41F1-AB9D-579850CFADE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59913846-6EA8-41F1-AB9D-579850CFADE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
