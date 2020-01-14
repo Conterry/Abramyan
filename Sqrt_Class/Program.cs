@@ -12,7 +12,7 @@ namespace SqrtSearch_Class
         static void Bin()
         {
             double k = 9, a = 0, b = k, avg=0;
-            while((b - k) * (b - k) != k)
+            while (b - a > 0.0001)
             {
                 avg = (a + b) / 2;
                 if (avg * avg < k)
@@ -25,7 +25,6 @@ namespace SqrtSearch_Class
                 }
             }
             Console.WriteLine(avg);
-
         }
     }
 }
