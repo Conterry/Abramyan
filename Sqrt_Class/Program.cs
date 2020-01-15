@@ -6,7 +6,7 @@ namespace SqrtSearch_Class
     {
         static void Main(string[] args)
         {
-            Bin();
+            gg();
         }
 
         static void Bin()
@@ -25,6 +25,24 @@ namespace SqrtSearch_Class
                 }
             }
             Console.WriteLine(avg);
+        }
+
+        static void gg()
+        {
+            int j = 0;
+            while (j < 250)
+            {
+                j++;
+                if (j % 5 == 0)
+                {
+                    Console.Clear();
+                    Random rand2 = new Random();
+                    int hh = rand2.Next(0, 40);
+                    Console.Write(hh);
+                    Console.WriteLine(" см");
+                }
+
+            }
         }
     }
 }

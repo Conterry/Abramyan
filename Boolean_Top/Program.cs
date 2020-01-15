@@ -53,19 +53,19 @@ namespace Boolean_Top
         static bool Boolean8()
         {
             int a = 5, b = 3;
-            return a % 2 != 0 && b % 2 != 0;
+            return a * b != 0;
         }
 
         static bool Boolean9()
         {
             int a = 5, b = 3;
-            return a % 2 != 0 || b % 2 != 0;
+            return a * b % 2 != 0;
         }
 
         static bool Boolean11()
         {
             int a = 3, b = 6;
-            return (a % 2 == 0 && b % 2 == 0) || (a % 2 != 0 && b % 2 != 0);
+            return (a * b % 2 == 0) || (a * b % 2 != 0);
         }
 
         static bool Boolean12()
