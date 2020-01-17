@@ -6,8 +6,7 @@ namespace While_Top
     {
         static void Main(string[] args)
         {
-            While11();
-            While12();
+            While22();
         }
 
         static void While1()
@@ -127,6 +126,133 @@ namespace While_Top
             }
             Console.WriteLine(k);
             Console.WriteLine(s);
+        }
+
+        static void While13()
+        {
+            double a = 5, k = 1, sum = 0;
+            while (sum < a)
+            {
+                sum += 1 / k;
+                k++;
+            }
+            Console.WriteLine(k);
+            Console.WriteLine(sum);
+        }
+
+        static void While14()
+        {
+            double a = 5, k = 1, sum = 0;
+            while (sum < a)
+            {
+                sum += 1 / k;
+                k++;
+            }
+            Console.WriteLine(k-1);
+            Console.WriteLine(sum-1/k);
+        }
+
+        static void While15()
+        {
+            double s = 1000, k = 0, p = 5, maxS = 1100;
+            while (s < maxS)
+            {
+                k++;
+                s = s + (s / 100 * p);
+            }
+            Console.WriteLine(k);
+            Console.WriteLine(s);
+        }
+
+        static void While16()
+        {
+            double s = 10, k = 0, p = 5, maxS = 200;
+            while (s < maxS)
+            {
+                k++;
+                s = s + (s / 100 * p);
+            }
+            Console.WriteLine(k);
+            Console.WriteLine(s);
+        }
+
+        static void While17()
+        {
+            int n = 123456789;
+            while (n > 0)
+            {
+                Console.Write(n % 10);
+                n /= 10;
+                Console.Write(' ');
+            }
+        }
+
+        static void While18()
+        {
+            int n = 123456789, quantity=0, sum=0;
+            while (n > 0)
+            {
+                sum += n % 10;
+                n /= 10;
+                quantity++;
+
+            }
+            Console.WriteLine(quantity);
+            Console.WriteLine(sum);
+        }
+
+        static void While19()
+        {
+            int n = 123456789;
+            while (n > 0)
+            {
+                Console.Write(n % 10);
+                n /= 10;
+            }
+        }
+
+        static void While20()
+        {
+            int n = 123456789, quantity = 0, sum = 0;
+            while (n > 0)
+            {
+                sum = n % 10;
+                n /= 10;
+                if (sum == 2) quantity++;
+
+            }
+            if (quantity > 0) Console.WriteLine("True");
+            if (quantity == 0) Console.WriteLine("False");
+        }
+
+        static void While21()
+        {
+            int n = 123456789, quantity = 0, sum = 0;
+            while (n > 0)
+            {
+                sum = n % 10;
+                n /= 10;
+                if (sum % 2 != 0) quantity++;
+
+            }
+            if (quantity > 0) Console.WriteLine("True");
+            if (quantity == 0) Console.WriteLine("False");
+        }
+
+        static void While22()
+        {
+            int n = 36, i = 1, j = 1, count=0;
+            while (i <= n)
+            {
+                while (j <= n)
+                {
+                    if (i * j == n) count++;
+                    j++;
+                }
+                i++;
+            }
+            if (count > 2) Console.WriteLine("False");
+            if (count == 2) Console.WriteLine("True");
         }
     }
 }
