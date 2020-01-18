@@ -6,7 +6,7 @@ namespace While_Top
     {
         static void Main(string[] args)
         {
-            While22();
+            While24();
         }
 
         static void While1()
@@ -21,7 +21,7 @@ namespace While_Top
 
         static void While2()
         {
-            double a = 8, b = 3, c=0;
+            double a = 8, b = 3, c = 0;
             while (a >= b)
             {
                 c++;
@@ -31,7 +31,7 @@ namespace While_Top
 
         static void While3()
         {
-            int n = 8, k = 3, d=0;
+            int n = 8, k = 3, d = 0;
             while (n >= k)
             {
                 d++;
@@ -43,13 +43,13 @@ namespace While_Top
 
         static void While4()
         {
-            int n = 8, k=1;
-            while (k<n)
+            int n = 8, k = 1;
+            while (k < n)
             {
                 k *= 3;
             }
 
-            if(k==n)
+            if (k == n)
             {
                 Console.WriteLine("True");
             }
@@ -62,7 +62,7 @@ namespace While_Top
         static void While5()
         {
             int n = 1024, k = 1;
-            while(Math.Pow(2, k) != n)
+            while (Math.Pow(2, k) != n)
             {
                 k++;
             }
@@ -90,7 +90,7 @@ namespace While_Top
             while (Math.Pow(3, k) < n)
             {
                 k++;
-            } 
+            }
             Console.WriteLine(k);
         }
 
@@ -107,7 +107,7 @@ namespace While_Top
         static void While11()
         {
             double n = 70, k = 1, s = 0;
-            while (s<=n)
+            while (s <= n)
             {
                 s += k;
                 k++;
@@ -119,7 +119,7 @@ namespace While_Top
         static void While12()
         {
             double n = 70, k = 1, s = 0;
-            while (s <= n-k)
+            while (s <= n - k)
             {
                 s += k;
                 k++;
@@ -148,8 +148,8 @@ namespace While_Top
                 sum += 1 / k;
                 k++;
             }
-            Console.WriteLine(k-1);
-            Console.WriteLine(sum-1/k);
+            Console.WriteLine(k - 1);
+            Console.WriteLine(sum - 1 / k);
         }
 
         static void While15()
@@ -189,7 +189,7 @@ namespace While_Top
 
         static void While18()
         {
-            int n = 123456789, quantity=0, sum=0;
+            int n = 123456789, quantity = 0, sum = 0;
             while (n > 0)
             {
                 sum += n % 10;
@@ -241,7 +241,7 @@ namespace While_Top
 
         static void While22()
         {
-            int n = 36, i = 1, j = 1, count=0;
+            int n = 36, i = 1, j = 1, count = 0;
             while (i <= n)
             {
                 while (j <= n)
@@ -253,6 +253,39 @@ namespace While_Top
             }
             if (count > 2) Console.WriteLine("False");
             if (count == 2) Console.WriteLine("True");
+        }
+
+        static void While24()
+        {
+            int f1 = 1, f2 = 1, k = 89;
+            int a = 0;
+            while (f1 < k)
+            {
+                int rez = f1;
+                f1 = f2;
+                f2 = rez + f2;
+                if (f1 == k)
+                {
+                    a = 1;
+                }
+                else
+                {
+                    a = 0;
+                }
+            }
+            if (a == 1)
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
+        }
+
+        static void While25()
+        {
+
         }
     }
 }
