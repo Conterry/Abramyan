@@ -6,7 +6,7 @@ namespace While_Top
     {
         static void Main(string[] args)
         {
-            While24();
+            While27();
         }
 
         static void While1()
@@ -285,7 +285,43 @@ namespace While_Top
 
         static void While25()
         {
+            int f1 = 1, f2 = 1, k = 88;
+            int a = 0;
+            while (f1 < k)
+            {
+                int rez = f1;
+                f1 = f2;
+                f2 = rez + f2;
+            }
+            Console.WriteLine(f1);
+        }
 
+        static void While26()
+        {
+            int f1 = 1, f2 = 1, k = 89, rez=0;
+            int a = 0;
+            while (f1 < k)
+            {
+                rez = f1;
+                f1 = f2;
+                f2 = rez + f2;
+            }
+            Console.WriteLine(rez);
+            Console.WriteLine(f2);
+        }
+
+        static void While27()
+        {
+            int f1 = 1, f2 = 1, k = 89, rez = 0, co = 0;
+            int a = 0;
+            while (f1 < k)
+            {
+                rez = f1;
+                f1 = f2;
+                f2 = rez + f2;
+                co++;
+            }
+            Console.WriteLine(co+1);
         }
     }
 }
