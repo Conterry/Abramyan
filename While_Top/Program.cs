@@ -323,5 +323,9 @@ namespace While_Top
             }
             Console.WriteLine(co+1);
         }
+
+        //While28()
+        //While29()
+        //While30()
     }
 }
