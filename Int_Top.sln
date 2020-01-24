@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "For_Top", "For_Top\For_Top.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqrtSearch_Class", "Sqrt_Class\SqrtSearch_Class.csproj", "{59913846-6EA8-41F1-AB9D-579850CFADE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "While_Top", "While_Top\While_Top.csproj", "{979415CA-A6BC-4A5D-B0BB-096E933DE028}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "While_Top", "While_Top\While_Top.csproj", "{979415CA-A6BC-4A5D-B0BB-096E933DE028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Series_Top", "Series_Top\Series_Top.csproj", "{77BC8D8F-D3ED-49E0-B73E-96B107E73DA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{979415CA-A6BC-4A5D-B0BB-096E933DE028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{979415CA-A6BC-4A5D-B0BB-096E933DE028}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{979415CA-A6BC-4A5D-B0BB-096E933DE028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77BC8D8F-D3ED-49E0-B73E-96B107E73DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77BC8D8F-D3ED-49E0-B73E-96B107E73DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77BC8D8F-D3ED-49E0-B73E-96B107E73DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77BC8D8F-D3ED-49E0-B73E-96B107E73DA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
